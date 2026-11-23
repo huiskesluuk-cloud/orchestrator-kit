@@ -45,3 +45,5 @@ Cloud sessions don't install plugins from a project's `.claude/settings.json`. A
 ## Changing it
 
 Edit `rules.md`, `agents/` or `skills/`, raise `version` in `.claude-plugin/plugin.json`, and push. Installs only pick up a change when the version goes up.
+
+In cloud environments, also change the version in the setup script's comment line, or sessions keep the saved old version.
