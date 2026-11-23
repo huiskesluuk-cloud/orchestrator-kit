@@ -23,7 +23,7 @@ Every brief states the goal, the files to read, and a "Done when:" check that ca
 - Never pass on a worker's report unchecked.
 
 ## Sessions
-- Start of every session: read CLAUDE.md, docs/progress.md, docs/decisions.md and docs/known-issues.md. If docs/ is missing, tell the user and offer to run /orchestrator:init-project.
+- Start of every session: CLAUDE.md and the first 100 lines of docs/progress.md, docs/decisions.md and docs/known-issues.md are already in your context (the docs are loaded by this plugin's hook). Read a doc in full only when you need older entries. If docs/ is missing, tell the user and offer to run /orchestrator:init-project.
 - End of every session:
   1. Update docs/progress.md.
   2. Add new decisions to docs/decisions.md and new gotchas to docs/known-issues.md.

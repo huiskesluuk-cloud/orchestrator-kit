@@ -1,5 +1,5 @@
 {
   "name": "orchestrator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Orchestrator-and-workers setup: Haiku builder and reviewer agents, a reflect skill, an init-project skill, and session rules loaded at every session start."
 }

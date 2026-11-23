@@ -6,7 +6,7 @@ A Claude Code plugin for an orchestrator-and-workers setup:
 - `orchestrator:reviewer` (Haiku): reads a diff against a brief, lists what fails it.
 - `/orchestrator:reflect`: end-of-session review; proposes edits and waits for your OK.
 - `/orchestrator:init-project`: creates CLAUDE.md and docs/ in a new project.
-- A SessionStart hook that loads `rules.md` at every session start, resume, /clear and compaction.
+- A SessionStart hook that loads `rules.md`, plus the first 100 lines of the project's docs/progress.md, docs/decisions.md and docs/known-issues.md, at every session start, resume, /clear and compaction.
 
 ## Use it in a project
 
