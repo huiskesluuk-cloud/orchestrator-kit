@@ -1,0 +1,11 @@
+{
+  "name": "orchestrator-kit",
+  "owner": { "name": "huiskesluuk-cloud" },
+  "plugins": [
+    {
+      "name": "orchestrator",
+      "source": "./",
+      "description": "Orchestrator-and-workers setup with Haiku workers and session rules."
+    }
+  ]
+}
