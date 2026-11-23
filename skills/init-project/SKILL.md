@@ -100,6 +100,7 @@ Format:
 ## .claude/settings.json
 
 If the file exists, merge these keys in and keep everything else.
+In cloud sessions this alone doesn't load the plugin: the environment's setup script must install it (see the plugin README).
 
 ```json
 {

@@ -30,6 +30,18 @@ On your own computer you can also install it for all projects:
     /plugin marketplace add huiskesluuk-cloud/orchestrator-kit
     /plugin install orchestrator@orchestrator-kit
 
+## Cloud sessions (claude.ai/code)
+
+Cloud sessions don't install plugins from a project's `.claude/settings.json`. Add this to the environment's setup script instead (environment menu → Edit → Setup script). This repo must stay public for it to work.
+
+    export PATH="$PATH:/opt/node22/bin"
+    if command -v claude >/dev/null 2>&1; then
+      claude plugin marketplace add huiskesluuk-cloud/orchestrator-kit || true
+      claude plugin marketplace update orchestrator-kit || true
+      claude plugin install orchestrator@orchestrator-kit || true
+      claude plugin update orchestrator@orchestrator-kit || true
+    fi
+
 ## Changing it
 
-Edit `rules.md`, `agents/` or `skills/`, push, and raise `version` in `.claude-plugin/plugin.json` so local installs pick up the change. Cloud sessions start fresh, so they always get the latest version.
+Edit `rules.md`, `agents/` or `skills/`, raise `version` in `.claude-plugin/plugin.json`, and push. Installs only pick up a change when the version goes up.
